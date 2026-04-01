@@ -1,0 +1,128 @@
+/* ═══════════════════════════════
+   SERVIÇOS
+   ═══════════════════════════════ */
+
+.servicos__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.servicos__card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 36px 30px;
+  cursor: default;
+  transition: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.servicos__card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-lt));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.servicos__card:hover::before {
+  transform: scaleX(1);
+}
+
+.servicos__card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-accent);
+  border-color: rgba(45, 74, 62, 0.2);
+}
+
+.servicos__card-glow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle at top right, rgba(45, 74, 62, 0.04), transparent 70%);
+  pointer-events: none;
+}
+
+.servicos__card-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: rgba(45, 74, 62, 0.08);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: all 0.35s ease;
+}
+
+.servicos__card:hover .servicos__card-icon {
+  background: var(--accent);
+  color: var(--bg);
+  transform: scale(1.05);
+}
+
+.servicos__card-tag {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.servicos__card-title {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.servicos__card-desc {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 1024px) {
+  .servicos__grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .servicos__grid {
+    grid-template-columns: 1fr !important;
+    gap: 14px;
+  }
+
+  .servicos__card {
+    padding: 24px 20px;
+  }
+
+  .servicos__card-icon {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 14px;
+  }
+
+  .servicos__card-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .servicos__card-desc {
+    font-size: 12px;
+  }
+}
