@@ -72,7 +72,7 @@ export default function Footer() {
             reservados.
           </span>
           <span className="footer__crm">
-            CRM 12345-SP · SBMEE · Medicina Esportiva
+            CRM 30993-GO · SBMEE · Medicina Esportiva
           </span>
         </div>
       </div>
