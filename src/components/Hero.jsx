@@ -53,7 +53,7 @@ export default function Hero() {
           <div className="hero__subtitle-bar">
             <span className="hero__specialty">Medicina Esportiva</span>
             <span className="hero__divider" />
-            <span className="hero__crm">CRM 12345-SP</span>
+            <span className="hero__crm">CRM 30993-GO</span>
           </div>
 
           <h1 className="hero__title">
