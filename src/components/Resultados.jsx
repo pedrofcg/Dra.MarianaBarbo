@@ -47,7 +47,7 @@ export default function Resultados() {
 
   // Auto-play every 5 seconds
   useEffect(() => {
-    const timer = setInterval(() => paginate(1), 5000);
+    const timer = setInterval(() => paginate(1), 10000);
     return () => clearInterval(timer);
   }, [paginate]);
 
