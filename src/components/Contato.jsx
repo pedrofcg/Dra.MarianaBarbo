@@ -8,7 +8,7 @@ import "../styles/contato.css";
 
 const contactInfo = [
   { icon: <Phone size={18} />, label: "Telefone / WhatsApp", value: "+55 (62) 99158-8693" },
-  { icon: <Mail size={18} />, label: "E-mail", value: "contato@dramarianabarbo.com.br" },
+
   {
     icon: <MapPin size={18} />,
     label: "Endereço",

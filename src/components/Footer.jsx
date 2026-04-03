@@ -10,19 +10,19 @@ const columns = [
   {
     title: "Serviços",
     links: [
-      "Avaliação Física",
-      "Reabilitação",
-      "Prescrição de Treino",
-      "Performance",
-      "Prevenção",
+      "Emagrecimento",
+      "Hipertrofia",
+      "Lipedema",
+      "Longevidade",
+      "Menopausa",
+      "Saúde Intestinal",
     ],
   },
 ];
 
 const socials = [
   { icon: <Instagram size={18} />, href: "https://www.instagram.com/dramariana.barbo/" },
-  { icon: <Linkedin size={18} />, href: "#" },
-  { icon: <MessageCircle size={18} />, href: "https://wa.me/5562991588693" },
+  { icon: <MessageCircle size={18} />, href: "https://wa.me/5562991588693" }
 ];
 
 export default function Footer() {
@@ -35,8 +35,8 @@ export default function Footer() {
               Dra. <span>Mariana Barbo</span>
             </div>
             <p className="footer__desc">
-              Medicina Esportiva com excelência, cuidado e ciência. Dedicada ao
-              seu bem-estar e à sua performance.
+              Nutrologia e Medicina do Esporte com excelência, cuidado e ciência.
+              Dedicada à sua saúde metabólica e qualidade de vida.
             </p>
             <div className="footer__social">
               {socials.map((s, i) => (
@@ -72,7 +72,7 @@ export default function Footer() {
             reservados.
           </span>
           <span className="footer__crm">
-            CRM 30993-GO · SBMEE · Medicina Esportiva
+            CRM 30993-GO · ABRAN · Nutrologia · Medicina do Esporte
           </span>
         </div>
       </div>

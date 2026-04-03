@@ -51,7 +51,7 @@ export default function Hero() {
           transition={{ duration: 0.9, ease: [0.25, 0.1, 0.25, 1] }}
         >
           <div className="hero__subtitle-bar">
-            <span className="hero__specialty">Medicina Esportiva</span>
+            <span className="hero__specialty">Nutrologia · Medicina do Esporte</span>
             <span className="hero__divider" />
             <span className="hero__crm">CRM 30993-GO</span>
           </div>
@@ -63,15 +63,15 @@ export default function Hero() {
           </h1>
 
           <p className="hero__quote">
-            "Performance, saúde e qualidade de vida
+            "Composição corporal, performance
             <br />
-            em primeiro lugar."
+            e saúde metabólica com ciência."
           </p>
 
           <p className="hero__description">
-            Especialista em medicina esportiva com foco em atletas, praticantes
-            de atividade física e reabilitação. Cuidando do seu corpo para que
-            você alcance seu melhor.
+            Médica com foco em emagrecimento, hipertrofia, lipedema,
+            longevidade, menopausa e saúde intestinal. Abordagem baseada em
+            evidência científica para sua melhor versão.
           </p>
 
           <div className="hero__actions">
@@ -96,9 +96,9 @@ export default function Hero() {
 
           <div className="hero__stats">
             {[
-              { end: "8", suffix: "+", label: "Anos de experiência" },
-              { end: "1200", suffix: "+", label: "Pacientes atendidos" },
-              { end: "15", suffix: "+", label: "Especializações" },
+              { end: "3", suffix: "+", label: "Anos de experiência" },
+              { end: "1000", suffix: "+", label: "Pacientes atendidos" },
+              { end: "5", suffix: "+", label: "Especializações" },
             ].map((s) => (
               <div key={s.label}>
                 <AnimatedCounter end={s.end} suffix={s.suffix} />
@@ -122,7 +122,7 @@ export default function Hero() {
             <div className="hero__photo">
               <img
                 src={heroImage}
-                alt="Dra. Mariana Barbo — Medicina Esportiva"
+                alt="Dra. Mariana Barbo — Nutrologia e Medicina do Esporte"
               />
               <div className="hero__photo-gradient" />
             </div>
@@ -137,7 +137,7 @@ export default function Hero() {
               <Award size={18} color={C.gold} />
               <div>
                 <div className="hero__badge-title">Certificada</div>
-                <div className="hero__badge-sub">SBMEE · CREF</div>
+                <div className="hero__badge-sub">ABRAN · Nutrologia</div>
               </div>
             </motion.div>
 
@@ -149,8 +149,8 @@ export default function Hero() {
             >
               <Heart size={18} color={C.accent} />
               <div>
-                <div className="hero__badge-title">4.9 ★</div>
-                <div className="hero__badge-sub">Avaliação média</div>
+                <div className="hero__badge-title"></div>
+                <div className="hero__badge-sub"></div>
               </div>
             </motion.div>
           </div>

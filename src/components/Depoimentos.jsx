@@ -9,34 +9,28 @@ import "../styles/depoimentos.css";
 
 const items = [
   {
-    name: "Lucas Ferreira",
-    role: "Triatleta amador",
+    name: "Celma",
+    role: "Paciente — Qualidade de vida",
     stars: 5,
-    text: "A Dra. Mariana transformou minha abordagem ao esporte. Com o acompanhamento dela, reduzi lesões e bati meu recorde pessoal no Iron Man. Incrível!",
+    text: "Parece outra pessoa. Muito mais leve. Claro que tem alguns momentos ainda, mas ela está se sentindo melhor. Relato do meu pai sobre a minha mãe: 'parece outra pessoa'.",
   },
   {
-    name: "Ana Clara Rodrigues",
-    role: "Crossfiteira",
+    name: "Lucas Gomes",
+    role: "Paciente — Hipertrofia",
     stars: 5,
-    text: "Voltei ao treino depois de uma lesão no joelho em metade do tempo previsto. Profissional altamente competente, carinhosa e sempre disponível.",
+    text: "Dra, amei nossa consulta hoje. Sério, há muito tempo procurava alguém como você, que olhasse tanto a parte da saúde, quanto o meu objetivo de hipertrofiar. Fiquei encantado com a clínica, com seu atendimento e pela segurança que me passou.",
   },
   {
-    name: "Roberto Mendes",
-    role: "Corredor de rua",
+    name: "Natalia",
+    role: "Paciente — Saúde integral",
     stars: 5,
-    text: "Passei anos sem conseguir completar treinos por dores. Hoje corro 10km sem problema. O trabalho da Dra. Mariana foi fundamental para minha qualidade de vida.",
+    text: "Você é a melhor! A profissional mais responsável, dedicada, preocupada com cada detalhe, em ajustar cada dificuldade na vida de cada paciente com suas especificidades! Mudança muito além da estética! Melhora na saúde física e mental!",
   },
   {
-    name: "Camila Torres",
-    role: "Nadadora competitiva",
+    name: "Felipe Mauri",
+    role: "Paciente — Longevidade",
     stars: 5,
-    text: "Atenção personalizada, diagnóstico preciso e um plano de reabilitação impecável. Voltei a competir mais forte do que nunca. Recomendo demais!",
-  },
-  {
-    name: "Felipe Andrade",
-    role: "Ciclista recreativo",
-    stars: 5,
-    text: "A avaliação física foi reveladora. Entendi melhor meu corpo, corrigi desequilíbrios musculares e minha performance melhorou 30% em 3 meses.",
+    text: "Eu achava que era impossível conciliar uma vida saudável com a rotina puxada de estudos da residência médica, além do trabalho e estudo pesado. Se dizem que um homem com vida bagunçada precisa de uma esposa pra arrumar a vida dele, quem dirá uma esposa com a competência médica que a minha tem.",
   },
 ];
 

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Shield, Target, TrendingUp, Users } from "lucide-react";
+import { Shield, Target, TrendingUp, Clipboard } from "lucide-react";
 import { fadeUp } from "../constants/tokens";
 import Section from "./ui/Section";
 import SectionLabel from "./ui/SectionLabel";
@@ -9,31 +9,31 @@ import "../styles/sobre.css";
 const diferenciais = [
   {
     icon: <Shield size={18} />,
-    title: "Abordagem Integrativa",
-    desc: "Tratamento personalizado que une evidências científicas e visão holística do atleta.",
+    title: "Baseada em Evidência",
+    desc: "Abordagem fundamentada em ciência para resultados seguros e eficazes.",
   },
   {
     icon: <Target size={18} />,
-    title: "Foco em Performance",
-    desc: "Protocolos específicos para maximizar resultados sem comprometer a saúde.",
+    title: "Composição Corporal",
+    desc: "Foco em melhora da composição corporal com protocolos personalizados.",
   },
   {
     icon: <TrendingUp size={18} />,
-    title: "Acompanhamento Contínuo",
-    desc: "Monitoramento periódico para ajustes precisos no plano de saúde e treino.",
+    title: "Saúde Metabólica",
+    desc: "Análise completa de perfil hormonal, resistência insulínica e marcadores inflamatórios.",
   },
   {
-    icon: <Users size={18} />,
-    title: "Equipe Multidisciplinar",
-    desc: "Trabalho integrado com fisioterapeutas, nutricionistas e preparadores físicos.",
+    icon: <Clipboard size={18} />,
+    title: "Avaliação Completa",
+    desc: "Histórico clínico detalhado, hábitos alimentares, sono, função intestinal e aspectos hormonais.",
   },
 ];
 
 const timeline = [
-  { year: "2012", text: "Graduação em Medicina — [Universidade]" },
-  { year: "2015", text: "Residência em Clínica Médica — [Hospital]" },
-  { year: "2017", text: "Especialização em Medicina Esportiva — [Instituicao]" },
-  { year: "2020", text: "Pós-graduação em — [XXXX]" },
+  { year: "2022", text: "Graduação em Medicina — UNICEPLAC, Brasília" },
+  { year: "2024", text: "Pós-graduação em Nutrologia — ABRAN" },
+  { year: "2024", text: "Pós-graduação em Medicina do Esporte — UNIGUAÇU" },
+  { year: "2024", text: "Fellow com Dr. Diogo Viana · Saúde Intestinal com Dra. Denise Carvalho · Implantes Hormonais — Bios" },
 ];
 
 export default function Sobre() {
@@ -51,16 +51,18 @@ export default function Sobre() {
             </Heading>
 
             <motion.p variants={fadeUp} className="sobre__text">
-              Sou Mariana Barbo, médica especialista em medicina esportiva
-              formada pela Universidade de [Universidade]. Com mais de [X] anos de
-              experiência, atuo acompanhando atletas de alta performance,
-              praticantes recreativos e pacientes em reabilitação.
+              Sou Mariana Barbo, médica formada pela UNICEPLAC (Brasília, 2022),
+              com pós-graduação em Nutrologia pela ABRAN e Medicina do Esporte
+              pela UNIGUAÇU. Atuo em consultório com foco em emagrecimento,
+              hipertrofia, lipedema, longevidade, menopausa e disfunções
+              intestinais (disbiose).
             </motion.p>
 
             <motion.p variants={fadeUp} className="sobre__text">
-              Minha missão é unir ciência e prática para que cada paciente
-              alcance o melhor de si — seja cruzando uma linha de chegada ou
-              conquistando mais qualidade de vida no dia a dia.
+              Minha abordagem é baseada em evidência científica, com foco em
+              melhora da composição corporal, performance, saúde metabólica e
+              qualidade de vida. Cada paciente recebe um cuidado único e
+              personalizado.
             </motion.p>
 
             {/* Timeline */}

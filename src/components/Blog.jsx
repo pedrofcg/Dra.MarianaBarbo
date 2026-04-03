@@ -8,28 +8,28 @@ import "../styles/blog.css";
 
 const posts = [
   {
-    tag: "Performance",
-    date: "15 Mar 2025",
-    title: "Como o sono influencia diretamente na recuperação muscular",
+    tag: "Emagrecimento",
+    date: "PubMed",
+    title: "Long-term weight loss and mortality (systematic review)",
     excerpt:
-      "Entenda por que atletas que dormem bem evoluem mais rápido e como você pode otimizar seu descanso.",
-    time: "5 min",
+      "Revisão sistemática sobre o impacto da perda de peso a longo prazo na redução da mortalidade.",
+    link: "https://pubmed.ncbi.nlm.nih.gov/17949355/",
   },
   {
-    tag: "Nutrição",
-    date: "03 Mar 2025",
-    title: "Suplementação esportiva: o que a ciência realmente comprova",
+    tag: "Saúde Metabólica",
+    date: "PubMed",
+    title: "Metabolic syndrome and cardiovascular risk (meta-analysis)",
     excerpt:
-      "Um olhar baseado em evidências sobre creatina, whey, cafeína e outros suplementos populares no esporte.",
-    time: "8 min",
+      "Meta-análise demonstrando como a síndrome metabólica agrava os fatores de risco cardiovascular.",
+    link: "https://pubmed.ncbi.nlm.nih.gov/20863953/",
   },
   {
-    tag: "Reabilitação",
-    date: "20 Fev 2025",
-    title: "Retorno ao esporte após lesão: quando e como voltar com segurança",
+    tag: "Longevidade",
+    date: "PubMed",
+    title: "Resistance training and mortality (systematic review & meta-analysis)",
     excerpt:
-      "Os critérios clínicos e funcionais que determinam o momento ideal para o atleta retomar os treinos.",
-    time: "6 min",
+      "Os impactos significativos do treinamento resistido (musculação) na longevidade e prevenção de doenças.",
+    link: "https://pubmed.ncbi.nlm.nih.gov/35599175/",
   },
 ];
 
@@ -51,20 +51,28 @@ export default function Blog() {
 
         <motion.div variants={stagger} className="blog__grid">
           {posts.map((p, i) => (
-            <motion.article key={i} variants={fadeUp} className="blog__card">
+            <motion.a
+              href={p.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              key={i}
+              variants={fadeUp}
+              className="blog__card"
+              style={{ textDecoration: "none", display: "block" }}
+            >
               <div className="blog__card-img">
                 <BookOpen size={40} color={`${C.accent}50`} />
                 <span className="blog__card-tag">{p.tag}</span>
               </div>
               <div className="blog__card-body">
                 <div className="blog__card-meta">
+                  <span>Pesquisa Científica</span>
                   <span>{p.date}</span>
-                  <span>{p.time} leitura</span>
                 </div>
                 <h3 className="blog__card-title">{p.title}</h3>
                 <p className="blog__card-excerpt">{p.excerpt}</p>
               </div>
-            </motion.article>
+            </motion.a>
           ))}
         </motion.div>
       </div>

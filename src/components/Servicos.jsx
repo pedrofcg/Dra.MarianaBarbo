@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import {
-  Activity, Heart, Zap, Trophy, Shield, BookOpen,
+  TrendingDown, Dumbbell, Droplets, Clock, Flower2, HeartPulse,
 } from "lucide-react";
 import { fadeUp, stagger } from "../constants/tokens";
 import Section from "./ui/Section";
@@ -10,40 +10,40 @@ import "../styles/servicos.css";
 
 const items = [
   {
-    icon: <Activity size={28} />,
-    title: "Avaliação Física",
-    desc: "Avaliação clínica completa com análise de composição corporal, VO₂ máx, limiar anaeróbio e aptidão funcional.",
-    tag: "Diagnóstico",
+    icon: <TrendingDown size={28} />,
+    title: "Emagrecimento",
+    desc: "Protocolos personalizados para perda de gordura com preservação de massa magra, baseados em evidência científica e acompanhamento metabólico.",
+    tag: "Composição Corporal",
   },
   {
-    icon: <Heart size={28} />,
-    title: "Reabilitação Esportiva",
-    desc: "Programa individualizado de recuperação de lesões musculoesqueléticas com foco em retorno seguro à prática.",
-    tag: "Reabilitação",
-  },
-  {
-    icon: <Zap size={28} />,
-    title: "Prescrição de Treino",
-    desc: "Elaboração de protocolos de treinamento baseados em evidências, alinhados ao seu objetivo e condição atual.",
-    tag: "Treino",
-  },
-  {
-    icon: <Trophy size={28} />,
-    title: "Performance Esportiva",
-    desc: "Estratégias avançadas de periodização, recuperação e suplementação para elevar seu nível competitivo.",
+    icon: <Dumbbell size={28} />,
+    title: "Hipertrofia",
+    desc: "Estratégias integradas de suplementação, modulação hormonal e acompanhamento clínico para maximizar o ganho de massa muscular.",
     tag: "Performance",
   },
   {
-    icon: <Shield size={28} />,
-    title: "Medicina Preventiva",
-    desc: "Check-up esportivo completo para prevenção de lesões, doenças crônicas e promoção da saúde a longo prazo.",
+    icon: <Droplets size={28} />,
+    title: "Lipedema",
+    desc: "Diagnóstico e tratamento do lipedema com abordagem clínica completa, visando melhora da qualidade de vida e redução de sintomas.",
+    tag: "Tratamento",
+  },
+  {
+    icon: <Clock size={28} />,
+    title: "Longevidade",
+    desc: "Medicina preventiva e funcional com foco em saúde metabólica, marcadores inflamatórios e envelhecimento saudável.",
     tag: "Prevenção",
   },
   {
-    icon: <BookOpen size={28} />,
-    title: "Qualidade de Vida",
-    desc: "Atendimento voltado a quem busca melhorar bem-estar geral, saúde metabólica e longevidade com saúde.",
-    tag: "Bem-estar",
+    icon: <Flower2 size={28} />,
+    title: "Menopausa",
+    desc: "Acompanhamento hormonal completo para mulheres no climatério e menopausa, com foco em bem-estar e equilíbrio.",
+    tag: "Saúde Feminina",
+  },
+  {
+    icon: <HeartPulse size={28} />,
+    title: "Saúde Intestinal",
+    desc: "Investigação e tratamento de disbiose e disfunções intestinais, com análise de marcadores e protocolos baseados em evidência.",
+    tag: "Disbiose",
   },
 ];
 
@@ -54,8 +54,8 @@ export default function Servicos() {
         <div className="text-center" style={{ marginBottom: 64 }}>
           <SectionLabel>Serviços</SectionLabel>
           <Heading className="text-center">
-            O que posso fazer<br />
-            <em>por você</em>
+            Áreas de<br />
+            <em>atuação</em>
           </Heading>
         </div>
 

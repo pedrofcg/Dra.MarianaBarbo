@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Sobre from "./components/Sobre";
 import Servicos from "./components/Servicos";
+import Resultados from "./components/Resultados";
 import Depoimentos from "./components/Depoimentos";
 import Blog from "./components/Blog";
 import Contato from "./components/Contato";
@@ -70,6 +71,7 @@ export default function App() {
         <Hero />
         <Sobre />
         <Servicos />
+        <Resultados />
         <Depoimentos />
         <Blog />
         <Contato />
