@@ -96,9 +96,7 @@ export default function Hero() {
 
           <div className="hero__stats">
             {[
-              { end: "3", suffix: "+", label: "Anos de experiência" },
-              { end: "1000", suffix: "+", label: "Pacientes atendidos" },
-              { end: "5", suffix: "+", label: "Especializações" },
+              
             ].map((s) => (
               <div key={s.label}>
                 <AnimatedCounter end={s.end} suffix={s.suffix} />
