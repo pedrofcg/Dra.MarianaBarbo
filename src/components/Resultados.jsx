@@ -85,7 +85,7 @@ export default function Resultados() {
 
           {/* Image slider */}
           <div className="resultados__slider">
-            <AnimatePresence initial={false} custom={direction} mode="wait">
+            <AnimatePresence initial={false} custom={direction}>
               <motion.div
                 key={current}
                 custom={direction}
