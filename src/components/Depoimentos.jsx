@@ -40,7 +40,7 @@ export default function Depoimentos() {
   const next = () => setCurrent((c) => (c + 1) % items.length);
 
   useEffect(() => {
-    const t = setInterval(next, 9000);
+    const t = setInterval(next, 15000);
     return () => clearInterval(t);
   }, []);
 
