@@ -270,6 +270,20 @@
 
   .hero__subtitle-bar {
     margin-bottom: 16px;
+    gap: 6px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+  }
+
+  .hero__specialty, .hero__crm {
+    font-size: clamp(7.5px, 2.5vw, 10px);
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+  }
+
+  .hero__divider {
+    width: 20px;
+    flex-shrink: 0;
   }
 
   .hero__quote {
