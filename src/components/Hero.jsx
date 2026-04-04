@@ -7,13 +7,13 @@ import heroImage from "../assets/hero-image.png";
 
 export default function Hero() {
   const { scrollY } = useScroll();
-  const y = useTransform(scrollY, [0, 600], [0, 120]);
-  const opacity = useTransform(scrollY, [0, 400], [1, 0]);
+  const y = useTransform(scrollY, [0, 800], [0, 150]);
+  const opacity = useTransform(scrollY, [0, 800], [1, 0]);
 
   const orbs = [
-    { w: 320, h: 320, top: "10%", right: "5%", bg: `${C.accent}0C` },
-    { w: 180, h: 180, bottom: "15%", right: "20%", bg: `${C.gold}14` },
-    { w: 120, h: 120, top: "40%", left: "3%", bg: `${C.accent}08` },
+    { w: 320, h: 320, top: "10%", right: "5%", bg: `${C.accent}0A` },
+    { w: 180, h: 180, bottom: "15%", right: "20%", bg: `${C.gold}0F` },
+    { w: 120, h: 120, top: "40%", left: "3%", bg: `${C.accent}06` },
   ];
 
   return (
