@@ -62,7 +62,7 @@ export default function Contato() {
 
           <div className="contato__map">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15284.16242427044!2d-49.27631663270869!3d-16.724825626287856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef1ff9247a731%3A0xc2c3a00f17f54e27!2sCl%C3%ADnica%20Mood!5e0!3m2!1spt-BR!2sus!4v1775066174535!5m2!1spt-BR!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.641249314829!2d-49.269705424092656!3d-16.69482634577272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef14cdc252697%3A0x2ec1f65ec81b8390!2sCl%C3%ADnica%20Instituto%20Torres%20-%20Nutrologia%20em%20Goi%C3%A2nia%20%7C%20Est%C3%A9tica%20Corporal!5e0!3m2!1spt-BR!2sbr!4v1777920821943!5m2!1spt-BR!2sbr"
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
