@@ -19,7 +19,7 @@ const contactInfo = [
         rel="noopener noreferrer"
         style={{ color: "inherit", textDecoration: "none" }}
       >
-        Av. T-4, Quadra 169 - 1478, Edifício Absolut Business Salas 82 à 84 A - St. Bueno, Goiânia - GO, 74230-030
+        R. 13, 941 - Q G15 LT 02 - St. Marista, Goiânia - GO, 74150-140
       </a>
     ),
   },
