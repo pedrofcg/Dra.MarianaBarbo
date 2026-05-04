@@ -14,7 +14,7 @@ const contactInfo = [
     label: "Endereço",
     value: (
       <a
-        href="https://maps.app.goo.gl/WYszxQmZnfyBABn68"
+        href="https://maps.app.goo.gl/vxYSSy47J1a8SVCF9"
         target="_blank"
         rel="noopener noreferrer"
         style={{ color: "inherit", textDecoration: "none" }}
